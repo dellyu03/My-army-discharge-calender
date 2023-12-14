@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color :black;
+    font-family: 'Black Han Sans', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px grey;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 50px;
+}
+.countdown  {
+    display: flex;
+}
+.ddaycounter {
+    color : white;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.countdown {
+    display: inline-block;
+    font-size: 30px;
+    color : white;
+    margin-left: none;
+}
+
