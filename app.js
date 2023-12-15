@@ -1,7 +1,8 @@
 // 목표 날짜 설정 (예시: 2023년 1월 1일)
 const dDay = new Date("2024-08-13T00:00:00Z");
+const millife = 547;
 
-function updateCountdown() {
+function updateTime() {
     // 현재 한국 시간을 얻어오기
     const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul" }));
 
@@ -17,11 +18,21 @@ function updateCountdown() {
 
     // 결과를 HTML에 업데이트
     const countdownElement = document.querySelector('.countdown');
-    countdownElement.innerHTML = `${days} ${hours}시간${minutes}분${seconds}초`;
+    countdownElement.innerHTML = `${days}일 ${hours}시간${minutes}분${seconds}초`;
+
+    function updatePercentage () {
+        const remainPercentage = (millife - days)/millife*100
+        percentageResult = remainPercentage.toFixed(2)
+        console.log(`${percentageResult}%`)
+    }
+
+    updatePercentage()
 }
 // 페이지 로드 시에도 업데이트 수행
-updateCountdown();
+updateTime();
 
 // 1초마다 업데이트
-setInterval(updateCountdown, 1000);
+setInterval(updateTime, 1000);
+
+
 
