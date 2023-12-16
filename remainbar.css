@@ -1,11 +1,31 @@
-.remain_bar {
+.progress-bar{
+    width: 1024px;
+    height: 30px;
     display: flex;
-    width: 1040px;
-    height: 50px;
-    background-color: grey;
+    margin-top: 20px;
     margin : auto;
     margin-bottom: 50px;
-    border-radius: 50px;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+}
+
+.progress-bar::-webkit-progress-bar{
+    background:#f0f0f0;
+    border-radius:30px;
+    box-shadow: inset 3px 3px 10px #ccc;
+}
+
+.progress-bar::-webkit-progress-value{
+    border-radius:20px;
+    background: #1D976C;
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
+    background: linear-gradient(to right, #93F9B9, #1D976C);
+}
+
+.progress-indicator{
+    margin-left: 10px;
+    font-size: 20px;
+    color : rgb(56, 59, 55);
+    font-weight: bold;
 }

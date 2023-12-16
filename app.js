@@ -15,17 +15,19 @@ function updateTime() {
     const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    const remainPercentage = (millife - days)/millife*100
+    percentageResult = remainPercentage.toFixed(2)
 
     // 결과를 HTML에 업데이트
     const countdownElement = document.querySelector('.countdown');
     countdownElement.innerHTML = `${days}일 ${hours}시간${minutes}분${seconds}초`;
 
     function updatePercentage () {
-        const remainPercentage = (millife - days)/millife*100
-        percentageResult = remainPercentage.toFixed(2)
-        console.log(`${percentageResult}%`)
+        const indicator = document.querySelector('.progress-indicator');
+        const progressBar = document.querySelector('.progress-bar');
+        indicator.innerHTML= `지금까지 ${percentageResult}% 했습니다!`
+        progressBar.setAttribute('value', percentageResult)
     }
-
     updatePercentage()
 }
 // 페이지 로드 시에도 업데이트 수행
