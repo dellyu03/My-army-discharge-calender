@@ -25,13 +25,13 @@ function updateTime() {
     remainTime.innerHTML= `${hours}시간 ${minutes}분 ${seconds}초`
 
     
-    //function updatePercentage () {
-       // const indicator = document.querySelector('.progress-indicator');
-        //const progressBar = document.querySelector('.progress-bar');
-//indicator.innerHTML= `지금까지 ${percentageResult}% 했습니다!`
-//progressBar.setAttribute('value', percentageResult)
-   // }
-   // updatePercentage()
+    function updatePercentage () {
+      const indicator = document.querySelector('.remain-indicator');
+      const progressBar = document.querySelector('.progress-bar');
+      indicator.innerHTML= `${percentageResult}%`
+      progressBar.setAttribute('value', percentageResult)
+  }
+  updatePercentage()
 }
 // 페이지 로드 시에도 업데이트 수행
 updateTime();

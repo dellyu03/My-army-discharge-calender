@@ -5,24 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나의 전역</title>
     <link rel = "stylesheet" href = "index.css">
+    <link rel = "stylesheet" href = "header.css">
+    <link rel = "stylesheet" href = "nav.css">
+    <link rel = "stylesheet" href = "article.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
-        <div class = "first-title title">며칠</div>
-        <div class = "remain-day indicator">241일</div>
-        <div class = "second-title title">남았음?</div>
-        <div class = "remainTime indicator">n시간 n분 n초</div>
+        <h1>전역일 계산</h1>
     </header>
-    <article>
-        
-    </article>
-    <nav>
-
-    </nav>
+    <div class = background>
+        <nav>
+            <div class = "btn-container">
+                <div class = "nav-title">메뉴</div>
+                <button class = "btn to-msg">메세지</button>
+                <button class = "btn to-vac">휴가</button>
+                <button class = "btn to-date">날짜 수정</button>
+                <button class = "btn to-setting">설정</button>
+                <button class = "nav-arrow">V</button>
+            </div>
+        </nav>
+        <div class="title-container">
+            <div class = "first-title title">며칠</div>
+            <div class = "second-title title">남았음?</div>
+            <div class = "day-title">
+                <div class = "remain-day indicator">241일</div>
+                <div class = "remainTime indicator">n시간 n분 n초</div>
+            </div>
+            <article>
+                <div class = "remain-indicator">55%</div>
+                <progress class = "progress-bar" max = "100" value =0></progress>
+            </article>
+        </div>
+    </div>
     <script src = "./app.js"></script>
 </body>
 </html>

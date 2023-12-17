@@ -1,0 +1,62 @@
+h1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:5%;
+    padding : 0px;
+    height: 8vh;
+    border-bottom : 2px dashed black;
+    width: 90vw;
+    font-size :50px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.title-container {
+    margin-left: 0px;
+    margin-top : 8vh;
+    display: grid;
+    grid-template-columns: 350px 300px 500px;
+    grid-template-rows: 200px 300px;
+}
+
+
+
+.title{
+    margin-top : auto;
+    margin-left: none;
+    font-size : 200px;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+
+.indicator {
+    font-family: 'Sunflower', sans-serif;
+    font-weight: bold;
+    margin : auto;
+    color: white;
+    font-size: 50px;
+}
+
+.remain-day {
+    margin-right: 0vw;
+    font-size: 120px;
+    font-size: 130px;
+}
+
+.remainTime {
+    margin-top: 0px;
+    margin-right: 0px;
+    font-size: 40px;
+}
+
+.second-title {
+    margin-left: 0px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+article {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
