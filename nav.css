@@ -1,4 +1,4 @@
-.btn-container {
+    .btn-container {
     position: absolute;
     left: 5%;
     top:0%;
@@ -29,7 +29,8 @@
     border:0px;
     margin:0px;
     width: 150px;
-    height: 40px;
+    height: 42px;
+    border-bottom: 1px solid #86A8E7;
     margin-top : 0px;
     background-color: none;
 }
